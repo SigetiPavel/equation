@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>JavaScript</title><meta charset="utf-8">
+ </head>
+ <body>
+   <h4>warpion</h4>
+    <script>{ 
+      const calc = function() {
+   		let n1 = +document.querySelector('#n1').value;
+        let n2 = +document.querySelector('#n2').value;
+        let n3 = +document.querySelector('#n3').value;
+        let n4 = +document.querySelector('#n4').value;
+        let n5 = +document.querySelector('#n5').value;
+        let n6 = +document.querySelector('#n6').value;
+        
+        let res1 = ((n3 * n5)-(n2 * n6))/((n1 * n5)-(n4 * n2));
+        let res2 = ((n1 * n6)-(n4 * n3))/((n1 * n5)-(n4 * n2));
+        
+        document.querySelector('#result1').value = res1; 
+      	document.querySelector('#result2').value = res2;
+   	};
+  	
+    console.log(document.querySelector('#bt'));
+
+  	// const btn = document.querySelector('#bt');
+  
+  	// btn.addEventListener('click', calc);
+  
+    }</script>
+   <input type="number" id="n1" value="2">
+   <input type="number" id="n2" value="3">
+   <input type="number" id="n3" value="18">
+   <br><br>
+   <input type="number" id="n4" value="4">
+   <input type="number" id="n5" value="-5">
+   <input type="number" id="n6" value="-8">
+   <br><br>
+   <button id="bt">Result</button>
+   <br><br>
+   <input type="number" id="result1">
+   <input type="number" id="result2">
+   
+ </body>
+</html>
